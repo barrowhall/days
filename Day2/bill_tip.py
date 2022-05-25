@@ -4,7 +4,7 @@ bill = float(input('What was to total bill? $'))
 tip = int(input('How much tip percentage would you like to give? 10, 12 or 15? '))
 people = int(input('How many people will split the bill ? '))
 
-tip_cal = tip / 100 * bill
+tip_cal = round(tip / 100 * bill, 2)
 calc = tip / 100 * bill + bill
 
 indiv = calc / people
