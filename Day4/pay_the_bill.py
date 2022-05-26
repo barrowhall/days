@@ -1,11 +1,13 @@
 import random
 
-name = input('Give me evrybody names, separated by comma: ')
+name = input('Give me everybody names, separated by comma: ')
 
 one = name.split(', ')
+leni = len(one)
 
-print(one)
+numb = random.randint(0, leni- 1)
 
-numb = random.randint(0, len(one))
+print(one[numb].capitalize() + ' is going to pay the meal today.')
 
-print(numb)
+
+
